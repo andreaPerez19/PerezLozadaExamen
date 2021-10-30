@@ -38,7 +38,7 @@
                 </Grid.ColumnDefinitions>
 
                 <Label Grid.Row="0" Grid.Column="0" Text="   Monto inicial" TextColor="Black"  BackgroundColor="#E5E7E9" />
-                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtMontoInicial" Placeholder="Ingrese el monto" Keyboard="Numeric" BackgroundColor="#E5E7E9" />
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtMontoInicial" Placeholder="Ingrese el monto" Keyboard="Numeric" BackgroundColor="#E5E7E9" TextChanged="txtMontoInicial_TextChanged" />
                 <Label Grid.Row="1" Grid.Column="0" Text="   Pago Mensual" TextColor="Black"  BackgroundColor="#E5E7E9" />
                 <Entry Grid.Row="1" Grid.Column="1" x:Name="txtPagoMensual" IsReadOnly="True" BackgroundColor="#E5E7E9" />
 

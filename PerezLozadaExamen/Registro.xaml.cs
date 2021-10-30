@@ -56,5 +56,21 @@ namespace PerezLozadaExamen
 
             await Navigation.PushAsync(new Resumen(nombre, usuario, totalPago));
         }
+
+        private void txtMontoInicial_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            try
+            {
+                if (double.Parse(txtMontoInicial.Text) > 1800 | double.Parse(txtMontoInicial.Text) < 0)
+                {
+                    DisplayAlert("Mensaje de advertencia", "Necesita ingresar un número entre 1 y 1800", "OK");
+                    txtMontoInicial.Text = null;
+                }
+            }
+            catch (Exception ex)
+            {
+
+            }
+        }
     }
 }
