@@ -48,7 +48,7 @@ namespace PerezLozadaExamen
             double cuota_inicio = Convert.ToDouble(txtMontoInicial.Text);
             double mensual = Convert.ToDouble(txtPagoMensual.Text);
             double total_cuota = mensual * 3;
-            double total = total_cuota + cuota_inicio;
+            double total = total_cuota + cuota_inicio; 
 
             string totalPago = Convert.ToString(total);
 
