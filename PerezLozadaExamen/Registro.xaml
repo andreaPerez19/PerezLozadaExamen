@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PerezLozadaExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#330099" Padding="15" CornerRadius="0">
+                <Label Text="Bienvenido al sistema, Registra tus Datos" HorizontalTextAlignment="Center" TextColor="White" FontSize="23"/>
+            </Frame>
+
+            <Label x:Name="lblUsuario" TextColor="Black" HorizontalTextAlignment="Center"/>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                
+                <Entry Grid.Row="0" Grid.Column="0" x:Name="txtNombre" Placeholder="Ingrese su nombre" BackgroundColor="#E5E7E9" />
+
+            </Grid>
+
+            <Grid>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                    <RowDefinition Height="40" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label Grid.Row="0" Grid.Column="0" Text="   Monto inicial" TextColor="Black"  BackgroundColor="#E5E7E9" />
+                <Entry Grid.Row="0" Grid.Column="1" x:Name="txtMontoInicial" Placeholder="Ingrese el monto" Keyboard="Numeric" BackgroundColor="#E5E7E9" />
+                <Label Grid.Row="1" Grid.Column="0" Text="   Pago Mensual" TextColor="Black"  BackgroundColor="#E5E7E9" />
+                <Entry Grid.Row="1" Grid.Column="1" x:Name="txtPagoMensual" IsReadOnly="True" BackgroundColor="#E5E7E9" />
+
+                <Button Grid.Row="2" Grid.Column="0" x:Name="btnCalcularPago" Text="Calcular" Clicked="btnCalcularPago_Clicked" BackgroundColor="#330099" TextColor="White"/>
+                <Button Grid.Row="2" Grid.Column="1" x:Name="btnGuardar" Text="GUARDAR" Clicked="btnGuardar_Clicked" BackgroundColor="Black" TextColor="White"/>
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
